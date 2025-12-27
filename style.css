@@ -448,6 +448,26 @@ section .about-details .right p{
     font-family: "Arial", sans-serif;
     text-align: center;
   }
+.canva-logo {
+    display: inline-block;
+    background: linear-gradient(to top, rgb(138, 0, 252),rgb(255, 22, 158));
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: 2px solid linear-gradient(to top, rgb(138, 0, 252),rgb(255, 22, 158));
+    text-align: center;
+}
+
+.canva-logo span {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+}
 /*Service*/
 .services .boxes{
     display: flex;
