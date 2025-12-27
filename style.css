@@ -352,44 +352,26 @@ section .title span::after{
     initial-value: 0deg;
     inherits: false;
 }
-/*.about .left::after, .about .left::before{
+.about .left::after, .about .left::before{
     content: '';
     position: absolute;
+    inset: -6px;
     height: 100%;
     width: 100%;
     background-image: conic-gradient( from var(--angle), transparent 72%, rgb(138, 0, 252),rgb(255, 22, 158));
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    z-index: -1;
+    z-index: 0;
     padding: 3px;
     border-radius: 11px;
     animation: 4s spin linear infinite;
-}*/
-.about .left::before,
-.about .left::after{
-    content: '';
-    position: absolute;
-    inset: -6px;                  /* thickness of ring */
-    border-radius: 14px;
-    background: conic-gradient(
-        from var(--angle),
-        transparent 72%,
-        rgb(138, 0, 252),
-        rgb(255, 22, 158)
-    );
-    z-index: 0;
-    animation: spin 4s linear infinite;
 }
-
 .about .left::before{
     filter: blur(18px);
     opacity: 0.8;
 }
-.about .left::before{
-    filter: blur(1.8rem);
-    opacity: 0.8;
-}
+
 @keyframes spin{
     from{
         --angle: 0deg;
@@ -710,4 +692,5 @@ footer .text span a{
         font-size: 16px;
     }
 }
+
 
