@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -78,6 +78,10 @@ header{
     margin-left: 5px;
     box-shadow: 0 10px 15px rgb(48, 47, 47);
     border-radius: 27px;
+}
+section{
+    scroll-margin-top: 100px;
+    padding-top: 120px;
 }
 /*nav*/
 nav{
@@ -261,8 +265,8 @@ section{
     justify-content: center;
 }
 .btn button{
-    width: 220px;      /* fixed width works better */
-    height: 45px;      /* fixed height */
+    width: 220px;
+    height: 45px;
     margin: 20px 0;
     background: linear-gradient(to  bottom right, rgb(138, 0, 252),rgb(255, 22, 158));
     color: rgb(0, 0, 0);
@@ -348,7 +352,7 @@ section .title span::after{
     initial-value: 0deg;
     inherits: false;
 }
-.about .left::after, .about .left::before{
+/*.about .left::after, .about .left::before{
     content: '';
     position: absolute;
     height: 100%;
@@ -361,6 +365,26 @@ section .title span::after{
     padding: 3px;
     border-radius: 11px;
     animation: 4s spin linear infinite;
+}*/
+.about .left::before,
+.about .left::after{
+    content: '';
+    position: absolute;
+    inset: -6px;                  /* thickness of ring */
+    border-radius: 14px;
+    background: conic-gradient(
+        from var(--angle),
+        transparent 72%,
+        rgb(138, 0, 252),
+        rgb(255, 22, 158)
+    );
+    z-index: 0;
+    animation: spin 4s linear infinite;
+}
+
+.about .left::before{
+    filter: blur(18px);
+    opacity: 0.8;
 }
 .about .left::before{
     filter: blur(1.8rem);
@@ -664,6 +688,9 @@ footer .text span a{
     .contact-form-con{
         padding: 10px;
     }
+    .about .left{
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width:480px){
@@ -683,3 +710,4 @@ footer .text span a{
         font-size: 16px;
     }
 }
+
