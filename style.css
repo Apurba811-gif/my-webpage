@@ -256,10 +256,14 @@ section{
     color: transparent;
 }
 /*All button*/
+.btn{
+    display: flex;
+    justify-content: center;
+}
 .btn button{
-    width: 35%;
-    height: 4vh;
-    margin: 25px;
+    width: 220px;      /* fixed width works better */
+    height: 45px;      /* fixed height */
+    margin: 20px 0;
     background: linear-gradient(to  bottom right, rgb(138, 0, 252),rgb(255, 22, 158));
     color: rgb(0, 0, 0);
     border-radius: 9px;
@@ -672,5 +676,10 @@ footer .text span a{
     }
     .toggle_btn{
         left:-4.5rem;
+    }
+    .btn button{
+        width: 90%;
+        height: 48px;
+        font-size: 16px;
     }
 }
