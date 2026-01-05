@@ -221,6 +221,7 @@ section{
 }
 .main-container .image img{
     width: 100%;
+    margin-top: -150px;
 }
 .main-container .image:hover{
     animation: animate 1.5s ease-in-out infinite;
