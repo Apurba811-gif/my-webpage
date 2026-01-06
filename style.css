@@ -221,7 +221,8 @@ section{
 }
 .main-container .image img{
     width: 100%;
-    margin-top: -150px;
+    height: 100%;
+    object-fit: cover;
 }
 .main-container .image:hover{
     animation: animate 1.5s ease-in-out infinite;
@@ -626,7 +627,7 @@ footer .text span a{
         width: 350px;
     }   
 }
-@media (max-width:968px){
+@media (max-width:966px){
     .logoheader{
         font-size: 40px;
         z-index: -1;
@@ -664,8 +665,16 @@ footer .text span a{
     }
     .main-container .image{
         z-index: -1;
-        width:50%;
-        height: 60%;
+        width: 250px;
+        height: 250px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .main-container .image img{
+        margin-top: 0; 
+        height: 100%;
+        object-fit: cover;
     }
     .skills .skills-details{
         align-items: center;
@@ -722,3 +731,4 @@ footer .text span a{
         overflow: hidden;
     }
 }
+
