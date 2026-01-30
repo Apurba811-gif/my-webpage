@@ -342,7 +342,7 @@ section .title span::after{
 }
 .about .left img{
     height: 400px;
-    width: 400px;
+    width: 410px;
     object-fit: cover;
     border-radius: 12px;
     padding-left: 3px;
@@ -705,7 +705,7 @@ footer .text span a{
     .about .left::after, .about .left::before{
         justify-content: center;
         align-items: center;
-        height: 350px;
+        height: 355px;
         width: 325px;
     }
 }
