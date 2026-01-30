@@ -705,8 +705,8 @@ footer .text span a{
     .about .left::after, .about .left::before{
         justify-content: center;
         align-items: center;
-        height: 355px;
-        width: 325px;
+        height: 350px;
+        width: 310px;
     }
 }
 
